@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CardGrid from "./components/AtomDesign/Template/CardGrid";
+import Button from "./components/common/Button";
+import ImogeButton from "./components/common/ImogeButton";
+import InfoText from "./components/common/Text/InfoText";
+import WornText from "./components/common/Text/WornText";
+import Fruits from "./components/Fruits";
+
+import Main from "./components/layout/Main";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Main /> */}
+      {/* {<CardGrid />} */}
+      {/* <WornText text={"worn"} />
+      <InfoText text={"info"} /> */}
+      <Button />
+      <ImogeButton />
+      <Fruits />
     </div>
   );
 }
