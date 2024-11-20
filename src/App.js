@@ -11,10 +11,10 @@ import Main from "./components/layout/Main";
 function App() {
   return (
     <div className="App">
-      {/* <Main /> */}
-      {/* {<CardGrid />} */}
-      {/* <WornText text={"worn"} />
-      <InfoText text={"info"} /> */}
+      <Main />
+      <CardGrid />
+      <WornText text={"worn"} />
+      <InfoText text={"info"} />
       <Button />
       <ImogeButton />
       <Fruits />
