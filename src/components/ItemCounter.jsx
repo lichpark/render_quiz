@@ -1,7 +1,8 @@
 import { useState } from "react";
+import Count from "./Count";
+import Price from "./Price";
 
 const ItemCounter = () => {
-  const price = 2000;
   const [total, setTotal] = useState(0);
   const minus = () => {
     setTotal((prev) => prev - 1);
@@ -12,12 +13,8 @@ const ItemCounter = () => {
 
   return (
     <>
-      <button onClick={minus}>-</button>
-      <span>{total}</span>
-      <button onClick={plus}>+</button>
-      <div style={{ border: "1px solid black", padding: "5px" }}>
-        {total * price}
-      </div>
+      <Count minus={minus} plus={plus} total={total} />
+      <Price price={10000} total={total} />
     </>
   );
 };
