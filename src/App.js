@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import CardGrid from "./components/AtomDesign/Template/CardGrid";
 import Button from "./components/common/Button";
@@ -18,11 +18,16 @@ import Shape1 from "./components/Shape1";
 import ItCounterQuiz from "./components/Itcounter/ItCounterQuiz";
 import ItTotalWrp from "./components/Itcounter/ItTotalWrp";
 import CheckButtonWrp from "./components/Chkbutton/CheckButtonWrp";
+import InputWrap from "./components/StatePractice/InputWrap";
+import CheckWrap from "./components/StatePractice/CheckWrap";
+import TodoWrap from "./components/StatePractice/TodoWrap";
 
 function App() {
-  const [total, setTotal] = useState(0);
+  // const [total, setTotal] = useState(0);
+
   return (
     <div className="App">
+      {/*  */}
       {/* <Main />
       <CardGrid />
       <WornText text={"worn"} />
@@ -36,7 +41,10 @@ function App() {
       {/* <LikeButton /> */}
       {/* <ItemCounter /> */}
       {/* <ItTotalWrp /> */}
-      <CheckButtonWrp />
+      {/* <CheckButtonWrp /> */}
+      <InputWrap />
+      <CheckWrap />
+      <TodoWrap />
     </div>
   );
 }
